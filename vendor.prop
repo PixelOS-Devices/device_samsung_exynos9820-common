@@ -46,6 +46,9 @@ ro.surface_flinger.has_wide_color_display=true
 ro.surface_flinger.has_HDR_display=true
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 ro.surface_flinger.use_color_management=true
+debug.hwui.renderer=skiagl
+debug.renderengine.backend=skiaglthreaded
+renderthread.skia.reduceopstasksplitting=true
 
 ## RIL
 vendor.rild.libpath=/vendor/lib64/libsec-ril.so
