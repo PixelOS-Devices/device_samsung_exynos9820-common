@@ -58,7 +58,8 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5-service_64.exynos9820 \
-    libsensorndkbridge
+    libsensorndkbridge \
+    Aperture
 
 # Charger
 PRODUCT_PACKAGES += \
