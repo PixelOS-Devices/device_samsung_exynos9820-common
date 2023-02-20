@@ -66,3 +66,6 @@ ro.soc.manufacturer=Samsung
 
 ## Wi-Fi Direct
 wifi.direct.interface=p2p-dev-wlan0
+
+# Zygote
+zygote.critical_window.minute=10
