@@ -48,6 +48,9 @@ TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.exynos9825.prop
 ## Recovery
 TARGET_RECOVERY_FSTAB_GENRULE := gen_fstab.exynos9820
 
+## Security
+VENDOR_SECURITY_PATCH := 2024-01-01
+
 ## Verified Boot
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 0
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --algorithm NONE

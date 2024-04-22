@@ -148,9 +148,6 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
 ## RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
-## Security
-VENDOR_SECURITY_PATCH := 2023-01-01
-
 ## SELinux
 BOARD_SEPOLICY_TEE_FLAVOR := teegris
 include device/lineage/sepolicy/exynos/sepolicy.mk

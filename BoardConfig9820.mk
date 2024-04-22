@@ -31,3 +31,10 @@ TARGET_BOOTLOADER_BOARD_NAME := exynos9820
 
 ## Properties
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.exynos9820.prop
+
+## Security
+ifeq ($(TARGET_DEVICE),beyondx)
+VENDOR_SECURITY_PATCH := 2023-04-01
+else
+VENDOR_SECURITY_PATCH := 2023-03-01
+endif

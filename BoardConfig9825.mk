@@ -37,3 +37,6 @@ TARGET_BOOTLOADER_BOARD_NAME := exynos9825
 
 ## Properties
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.exynos9825.prop
+
+## Security
+VENDOR_SECURITY_PATCH := 2023-08-01
