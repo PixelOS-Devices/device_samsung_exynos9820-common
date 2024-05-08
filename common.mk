@@ -187,6 +187,9 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml
 
+# Memory allocator
+PRODUCT_USE_SCUDO := true
+
 # Memtrack
 PRODUCT_PACKAGES += \
     android.hardware.memtrack-service.samsung-mali
