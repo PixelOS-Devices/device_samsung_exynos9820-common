@@ -1,107 +1,11 @@
 {
     "Nodes": [
         {
-            "Name": "CPULittleClusterMaxFreq",
-            "Path": "/dev/cluster0_freq_max",
-            "Values": [
-                "0x001dc130",
-                "0x00183350",
-                "0x00163780",
-                "0x0013d620"
-            ],
-            "HoldFd": true,
-            "DefaultIndex": 0,
-            "ResetOnInit": true
-        },
-        {
-            "Name": "CPULittleClusterMinFreq",
-            "Path": "/dev/cluster0_freq_min",
-            "Values": [
-                "0x001dc130",
-                "0x00183350",
-                "0x0013d620",
-                "0x0011a788",
-                "0x000c4c70",
-                "0x00000000"
-            ],
-            "HoldFd": true,
-            "ResetOnInit": true
-        },
-        {
-            "Name": "CPUBigClusterMaxFreq",
-            "Path": "/dev/cluster1_freq_max",
-            "Values": [
-                "0x00234f10",
-                "0x001cf610",
-                "0x00183350",
-                "0x00156c60",
-                "0x0012a570"
-            ],
-            "HoldFd": true,
-            "DefaultIndex": 0,
-            "ResetOnInit": true
-        },
-        {
-            "Name": "CPUBigClusterMinFreq",
-            "Path": "/dev/cluster1_freq_min",
-            "Values": [
-                "0x00234f10",
-                "0x00183350",
-                "0x00156c60",
-                "0x0012a570",
-                "0x000ce4c8",
-                "0x00000000"
-            ],
-            "HoldFd": true,
-            "ResetOnInit": true
-        },
-        {
-            "Name": "CPUBigPlusClusterMaxFreq",
-            "Path": "/dev/cluster2_freq_max",
-            "Values": [
-                "0x0029a810",
-                "0x0023b4a0",
-                "0x001bc560",
-                "0x001506d0"
-            ],
-            "HoldFd": true,
-            "DefaultIndex": 0,
-            "ResetOnInit": true
-        },
-        {
-            "Name": "CPUBigPlusClusterMinFreq",
-            "Path": "/dev/cluster2_freq_min",
-            "Values": [
-                "0x0029a810",
-                "0x001bc560",
-                "0x0017cdc0",
-                "0x001506d0",
-                "0x000c7f38",
-                "0x00000000"
-            ],
-            "HoldFd": true,
-            "ResetOnInit": true
-        },
-        {
-            "Name": "GPUMaxFreq",
-            "Path": "/dev/gpu_freq_max",
-            "Values": [
-                "0x0005c0a8",
-                "0x00069b68",
-                "0x0008ba60",
-                "0x000ab630"
-            ],
-            "HoldFd": true,
-            "DefaultIndex": 0,
-            "ResetOnInit": true
-        },
-        {
             "Name": "GPUMinFreq",
             "Path": "/dev/gpu_freq_min",
             "Values": [
-                "0x0008ba60",
-                "0x0005c0a8",
-                "0x00026160"
+                "0x00003f7a0",
+                "0x000026160"
             ],
             "HoldFd": true,
             "ResetOnInit": true
@@ -173,54 +77,6 @@
             "Value": "0x0000002c"
         },
         {
-            "PowerHint": "CAMERA_STREAMING_MID",
-            "Node": "CPUBigClusterMaxFreq",
-            "Duration": 0,
-            "Value": "0x001cf610"
-        },
-        {
-            "PowerHint": "CAMERA_STREAMING_MID",
-            "Node": "CPUBigPlusClusterMaxFreq",
-            "Duration": 0,
-            "Value": "0x001bc560"
-        },
-        {
-            "PowerHint": "CAMERA_SHOT",
-            "Node": "CPUBigClusterMaxFreq",
-            "Duration": 1000,
-            "Value": "0x00234f10"
-        },
-        {
-            "PowerHint": "CAMERA_SHOT",
-            "Node": "CPUBigPlusClusterMaxFreq",
-            "Duration": 1000,
-            "Value": "0x0029a810"
-        },
-        {
-            "PowerHint": "CAMERA_SHOT",
-            "Node": "CPUBigClusterMinFreq",
-            "Duration": 1000,
-            "Value": "0x00234f10"
-        },
-        {
-            "PowerHint": "CAMERA_SHOT",
-            "Node": "CPUBigPlusClusterMinFreq",
-            "Duration": 1000,
-            "Value": "0x0029a810"
-        },
-        {
-            "PowerHint": "CAMERA_SHOT",
-            "Node": "CPULittleClusterMaxFreq",
-            "Duration": 1000,
-            "Value": "0x001dc130"
-        },
-        {
-            "PowerHint": "CAMERA_SHOT",
-            "Node": "CPULittleClusterMinFreq",
-            "Duration": 1000,
-            "Value": "0x001dc130"
-        },
-        {
             "PowerHint": "CAMERA_SHOT",
             "Node": "PMQoSCpuDmaLatency",
             "Duration": 1000,
@@ -239,42 +95,6 @@
             "Value": "0x0000002c"
         },
         {
-            "PowerHint": "SUSTAINED_PERFORMANCE",
-            "Node": "CPUBigClusterMaxFreq",
-            "Duration": 0,
-            "Value": "0x00183350"
-        },
-        {
-            "PowerHint": "SUSTAINED_PERFORMANCE",
-            "Node": "CPUBigPlusClusterMaxFreq",
-            "Duration": 0,
-            "Value": "0x001bc560"
-        },
-        {
-            "PowerHint": "SUSTAINED_PERFORMANCE",
-            "Node": "CPULittleClusterMaxFreq",
-            "Duration": 0,
-            "Value": "0x0013d620"
-        },
-        {
-            "PowerHint": "SUSTAINED_PERFORMANCE",
-            "Node": "GPUMaxFreq",
-            "Duration": 0,
-            "Value": "0x00069b68"
-        },
-        {
-            "PowerHint": "EXPENSIVE_RENDERING",
-            "Node": "GPUMinFreq",
-            "Duration": 0,
-            "Value": "0x0008ba60"
-        },
-        {
-            "PowerHint": "EXPENSIVE_RENDERING",
-            "Node": "GPUMaxFreq",
-            "Duration": 0,
-            "Value": "0x000ab630"
-        },
-        {
             "PowerHint": "INTERACTIVE",
             "Node": "TouchscreenEnable",
             "Duration": 0,
@@ -285,6 +105,12 @@
             "Node": "LCDEnable",
             "Duration": 0,
             "Value": "1"
+        },
+        {
+            "PowerHint": "INTERACTIVE",
+            "Node": "GPUMinFreq",
+            "Duration": 0,
+            "Value": "0x00003f7a0"
         },
         {
             "PowerHint": "DOUBLE_TAP_TO_WAKE",
