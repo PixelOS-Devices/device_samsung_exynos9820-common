@@ -1,6 +1,6 @@
 on init
     # for tsp cmd node
-    chown system radio /sys/class/sec/tsp/cmd
+    chown system system /sys/class/sec/tsp/cmd
 
     # for audit message
     chown system system /proc/avc_msg
@@ -414,7 +414,7 @@ on boot
     chown system radio /sys/class/power_supply/battery/gps
     chown system radio /sys/class/power_supply/battery/wifi
     chown system radio /sys/class/power_supply/battery/lte
-    chown system radio /sys/class/power_supply/battery/lcd
+    chown system system /sys/class/power_supply/battery/lcd
     chown system radio /sys/class/power_supply/ps/status
     chmod 0664 /sys/class/power_supply/battery/wc_control
     chmod 0664 /sys/class/power_supply/battery/wc_control_cnt

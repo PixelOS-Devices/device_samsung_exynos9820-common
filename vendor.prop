@@ -68,6 +68,9 @@ ro.crypto.dm_default_key.options_format.version=2
 ro.crypto.metadata_init_delete_all_keys.enabled=true
 ro.crypto.volume.metadata.method=dm-default-key
 
+## Power HAL
+vendor.powerhal.disp.idle_support=false
+
 ## RIL
 vendor.sec.rild.libpath=/vendor/lib64/libsec-ril.so
 
