@@ -23,3 +23,6 @@ $(call inherit-product, $(COMMON_PATH)/common.mk)
 PRODUCT_PACKAGES += \
     fstab.exynos9825 \
     fstab.exynos9825.ramdisk
+
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/init/init.recovery.exynos9820.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.exynos9825.rc
