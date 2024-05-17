@@ -4,6 +4,7 @@
             "Name": "GPUMinFreq",
             "Path": "/dev/gpu_freq_min",
             "Values": [
+                "0x00008ba60",
                 "0x00003f7a0",
                 "0x000026160"
             ],
@@ -117,6 +118,18 @@
             "Node": "DoubleTapToWakeEnable",
             "Duration": 0,
             "Value": "set_aod_rect,1440,3040,0,0"
+        },
+        {
+            "PowerHint": "EXPENSIVE_RENDERING",
+            "Node": "GPUMinFreq",
+            "Duration": 0,
+            "Value": "0x00008ba60"
+        },
+        {
+            "PowerHint": "LAUNCH",
+            "Node": "GPUMinFreq",
+            "Duration": 5000,
+            "Value": "0x00008ba60"
         }
     ]
 }
