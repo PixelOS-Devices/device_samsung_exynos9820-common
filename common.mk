@@ -173,10 +173,6 @@ PRODUCT_PACKAGES += \
     libshim_crypto:64 \
     libssl-tm
 
-# KProfiles
-PRODUCT_PACKAGES += \
-    KProfiles
-
 # Livedisplay
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service.samsung-exynos
