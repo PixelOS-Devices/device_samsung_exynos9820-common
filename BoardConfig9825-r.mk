@@ -35,7 +35,7 @@ BOARD_DTB_CFG := $(COMMON_PATH)/configs/kernel/exynos9825-r.cfg
 BOARD_BOOTIMAGE_PARTITION_SIZE := 61865984
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 71102464
 
-$(call soong_config_set,fstab.exynos9820,has_metadata_partition,true)
+$(call soong_config_set,fstab_exynos9820,has_metadata_partition,true)
 
 ## Platform
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/exynos9825_manifest.xml

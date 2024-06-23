@@ -16,7 +16,7 @@
 soong_config_module_type {
     name: "metadata_partition",
     module_type: "genrule_defaults",
-    config_namespace: "fstab.exynos9820",
+    config_namespace: "fstab_exynos9820",
     bool_variables: ["has_metadata_partition"],
     properties: ["cmd"],
 }
