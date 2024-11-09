@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2023 The LineageOS Project
+# Copyright (C) 2023-2025 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,10 +17,6 @@
 # Inherit common configuration
 $(call inherit-product, $(COMMON_PATH)/common.mk)
 
-# Display
-PRODUCT_PACKAGES += \
-    libGrallocWrapper
-
 # NFC
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/nfc/libnfc-sec-vendor.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-sec-vendor.conf
@@ -31,7 +27,3 @@ DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay-exynos9820
 # PowerShare
 PRODUCT_PACKAGES += \
     vendor.lineage.powershare@1.0-service.samsung
-
-# VNDK
-PRODUCT_PACKAGES += \
-    libutils-v32

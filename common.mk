@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021-2024 The LineageOS Project
+# Copyright (C) 2021-2025 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -57,11 +57,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider-service.samsung \
-    libsensorndkbridge
-
-PRODUCT_PACKAGES += \
-    libhwjpeg
+    android.hardware.camera.provider-service.samsung
 
 # Charger
 PRODUCT_PACKAGES += \
@@ -78,8 +74,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.0-impl-2.1
 
 PRODUCT_PACKAGES += \
-    android.hardware.composer.hwc3-service.slsi \
-    libion
+    android.hardware.composer.hwc3-service.slsi
 
 # Doze
 PRODUCT_PACKAGES += \
@@ -90,7 +85,6 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.4.vendor:32 \
     android.hardware.drm-service.clearkey
 
 # fastbootd
@@ -109,11 +103,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl:64 \
     android.hardware.gatekeeper@1.0-service
-
-# GNSS
-PRODUCT_PACKAGES += \
-    android.frameworks.sensorservice@1.0.vendor:64 \
-    android.hardware.gnss@2.1.vendor:64
 
 # Graphics
 # Device uses high-density artwork where available
@@ -150,13 +139,7 @@ PRODUCT_COPY_FILES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.0-service.samsung \
-    libkeymaster4_1support.vendor:64
-
-PRODUCT_PACKAGES += \
-    libcrypto-tm \
-    libshim_crypto:64 \
-    libssl-tm
+    android.hardware.keymaster@4.0-service.samsung
 
 # Lineage Health
 PRODUCT_PACKAGES += \
@@ -262,30 +245,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
-# Protobuf
-PRODUCT_PACKAGES += \
-    libprotobuf-cpp-full-3.9.1-vendorcompat
-
 # Public Libraries
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/linker/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
 # RIL
-PRODUCT_PACKAGES += \
-    android.hardware.radio@1.2.vendor:64 \
-    android.hardware.radio.config-V1-ndk.vendor:64 \
-    android.hardware.radio.data-V1-ndk.vendor:64 \
-    android.hardware.radio.messaging-V1-ndk.vendor:64 \
-    android.hardware.radio.modem-V1-ndk.vendor:64 \
-    android.hardware.radio.network-V1-ndk.vendor:64 \
-    android.hardware.radio.sim-V1-ndk.vendor:64 \
-    android.hardware.radio.voice-V1-ndk.vendor:64 \
-    libnetutils.vendor:64 \
-    libsqlite.vendor:64
-
-PRODUCT_PACKAGES += \
-    libdsms_vendor:64
-
 PRODUCT_PACKAGES += \
     cbd \
     secril_config_svc \
@@ -296,13 +260,7 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.contexthub@1.0.vendor:64 \
     android.hardware.sensors-service.samsung-multihal
-
-# Shims
-PRODUCT_PACKAGES += \
-    libshim_oemcrypto \
-    libshim_sensorndkbridge
 
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
