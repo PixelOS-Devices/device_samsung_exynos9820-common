@@ -112,7 +112,7 @@ TARGET_KERNEL_NO_GCC := true
 TARGET_KERNEL_SOURCE := kernel/samsung/exynos9820
 
 ## Keymaster
-TARGET_KEYMASTER_VARIANT := samsung
+$(call soong_config_set,samsungVars,target_keymaster4_library,//vendor/samsung/exynos9820-common:libskeymaster4device)
 
 ## Manifest
 # HIDL
