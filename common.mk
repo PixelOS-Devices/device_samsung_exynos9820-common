@@ -131,6 +131,7 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/init/init.exynos9820.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.exynos9820.rc \
     $(COMMON_PATH)/configs/init/init.exynos9820.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.exynos9820.usb.rc \
     $(COMMON_PATH)/configs/init/init.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.samsung.rc \
+    $(COMMON_PATH)/configs/init/init.stune.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.stune.rc \
     $(COMMON_PATH)/configs/init/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.rc
 
 ifeq ($(TARGET_HAVE_FOD),true)
@@ -321,6 +322,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.samsung.hardware.spen-service.davinci
 endif
+
+# Task profiles
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/task_profiles/cgroups_30.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
+    $(COMMON_PATH)/configs/task_profiles/task_profiles_30.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
 
 # Thermal
 PRODUCT_PACKAGES += \
