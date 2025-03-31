@@ -24,6 +24,7 @@ soong_config_module_type {
         "use_soundtrigger_hal",
         "use_spkamp_playback",
         "use_quad_mic",
+        "use_quad_mic_apcall",
         "use_quad_mic_camcorder",
     ],
     properties: [
@@ -67,6 +68,9 @@ audioproxy {
         },
         use_quad_mic: {
             cflags: ["-DSUPPORT_QUAD_MIC"],
+        },
+        use_quad_mic_apcall: {
+            cflags: ["-DSUPPORT_APCALL_QUAD_MIC"],
         },
         use_quad_mic_camcorder: {
             cflags: ["-DSUPPORT_CAMCORDER_QUAD_MIC"],

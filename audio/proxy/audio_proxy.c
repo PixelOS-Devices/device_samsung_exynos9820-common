@@ -444,8 +444,12 @@ static bool is_quad_mic_device(device_type device)
 
     if (device == DEVICE_QUAD_MIC)
         flag = true;
+#ifdef SUPPORT_APCALL_QUAD_MIC
     else if (is_usage_CPCall(aproxy->active_capture_ausage) ||
             is_usage_APCall(aproxy->active_capture_ausage))
+#else
+    else if (is_usage_CPCall(aproxy->active_capture_ausage))
+#endif
         flag = (device == DEVICE_MAIN_MIC ||
                 device == DEVICE_HANDSET_MIC ||
                 device == DEVICE_HEADPHONE_MIC ||

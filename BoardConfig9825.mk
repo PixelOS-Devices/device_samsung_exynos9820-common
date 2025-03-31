@@ -19,6 +19,7 @@ COMMON_PATH := device/samsung/exynos9820-common
 include $(COMMON_PATH)/BoardConfigPieLaunched.mk
 
 ## Audio
+$(call soong_config_set,exynos9820AudioVars,use_quad_mic_apcall,true)
 $(call soong_config_set,exynos9820AudioVars,use_quad_mic_camcorder,true)
 
 ## Dynamic Partitions
