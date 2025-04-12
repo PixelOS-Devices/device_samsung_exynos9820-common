@@ -22,6 +22,8 @@ KERNEL_OUT := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ
 DTB_DIR    := $(KERNEL_OUT)/arch/$(KERNEL_ARCH)/boot/dts/exynos
 DTB_CFG    := $(COMMON_PATH)/configs/kernel/$(TARGET_SOC).cfg
 
+INSTALLED_DTBIMAGE_TARGET := $(PRODUCT_OUT)/dtb.img
+
 $(INSTALLED_DTBIMAGE_TARGET): $(PRODUCT_OUT)/kernel $(MKDTBOIMG) $(AVBTOOL)
 	$(hide) echo "Building dtb.img"
 	$(hide) $(MKDTBOIMG) cfg_create $@ $(DTB_CFG) -d $(DTB_DIR)
@@ -35,6 +37,8 @@ $(INSTALLED_DTBIMAGE_TARGET): $(PRODUCT_OUT)/kernel $(MKDTBOIMG) $(AVBTOOL)
 
 .PHONY: dtbimage
 dtbimage: $(INSTALLED_DTBIMAGE_TARGET)
+
+INSTALLED_RADIOIMAGE_TARGET += $(INSTALLED_DTBIMAGE_TARGET)
 
 endif
 endif
