@@ -26,4 +26,4 @@ DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay-exynos9820
 
 # PowerShare
 PRODUCT_PACKAGES += \
-    vendor.lineage.powershare@1.0-service.samsung
+    vendor.lineage.powershare-service.samsung
